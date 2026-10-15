@@ -1,0 +1,114 @@
+.body {
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.displayNoteDiv {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.displayNoteDiv h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.displayNoteDiv p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.icon:hover,
+.btn:hover {
+  opacity: 0.8;
+}
+
+.newNoteDiv {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  border-radius: 12px;
+  background: #e2e8f0;
+
+  font-family: sans-serif;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  outline: none;
+  color: black;
+  font-family: inherit;
+
+}
+
+.content {
+  min-height: 70vh;
+}
+
+.noteCard {
+  padding: 20px;
+  border-radius: 12px;
+  background: #cbd9e8;
+  color: #172b4d;
+  border: 1px solid #a8bacd;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  text-align: left;
+}
+
+
+.noteButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.icon:hover {
+  background-color: darkseagreen;
+}
+
+.noteCard:hover .noteButtons {
+  opacity: 1;
+}
